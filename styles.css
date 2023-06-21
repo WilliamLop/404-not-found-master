@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --gray: #BDBDBD;
+    --veryGray: #333333;
+    --white: #ffff;
+    --grayLight: ##4F4F4F;
+    --ff-inconsolata: 'Inconsolata', monospace;;
+    --red: #FF6D5B;
+    --yellow: #FFD25B;
+    --morate: #60588E;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    font-family: Space Mono;
+
+}
+
+
+.header__description{
+    width: 90%;
+    margin: 1rem auto;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: var(--ff-inconsolata);
+    max-width: 1400px;
+}
+
+
+.main__container{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.picture__img{
+    width: 100%;
+}
+
+.img__ilustrarion{
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.info__title{
+    font-size: 2.6em;
+    max-width: 400px;
+}
+.info__paragraph{
+    color: var(--veryGray);
+    padding-right: .4rem;
+    line-height: 1.6;
+    margin: 2.5rem 0 4.5rem 0;
+    max-width: 300px;
+
+}
+.btn{
+    padding: 1.2rem 2.2rem;
+    background-color: var(--veryGray);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+    font-size: .75em;
+    border: none;
+    transition: .6s ease-in-out;
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: var(--morate);
+    cursor: pointer;
+    border-radius: .3rem;
+    
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.copy{
+    color: var(--gray);
+    font-size: .9em;
+} 
+
+a{
+    color: var(--gray);
+    transition: .6s ease-in-out; 
+}
+
+a:hover{
+    color: var(--red);
+}
+a:visited{
+    color: var(--yellow);
+}
+
+
+@media (min-width: 768px) {
+    .header__description{
+        padding-top: 1.5rem;
+    }
+    .main__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        gap: 4rem;
+    }
+    .info__paragraph{
+        color: var(--veryGray);
+        padding-right: .4rem;
+        line-height: 1.6;
+        margin: 2rem 0 3.2rem 0;
+        max-width: 300px;
+    
+    }
+}
