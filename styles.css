@@ -87,6 +87,7 @@ body{
 }
 
 .footer{
+    box-sizing: border-box;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -119,13 +120,13 @@ a:visited{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
-        gap: 4rem;
+        gap: 3em;
     }
     .info__paragraph{
         color: var(--veryGray);
         padding-right: .4rem;
         line-height: 1.6;
-        margin: 2rem 0 3.2rem 0;
+        margin: 2rem 0 2.5rem 0;
         max-width: 300px;
     
     }
